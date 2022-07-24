@@ -10,7 +10,7 @@ const adjacentElementsProduct = (array) => {
       product=array[i]*array[i+1];
       continue;
     }
-    (product < array[i]*array[i+1]) ? product=array[i]*array[i+1] : console.log("wtf");   
+    (product < array[i]*array[i+1]) ? product=array[i]*array[i+1] : product=product;   
   }
   return product
 }
